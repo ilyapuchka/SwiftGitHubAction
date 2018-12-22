@@ -5,11 +5,12 @@ FROM swift:4.2
 #LABEL homepage="http://github.com/actions/npm"
 #LABEL maintainer="GitHub Actions <support+actions@github.com>"
 
-LABEL com.github.actions.name="GitHub Action for swift"
-LABEL com.github.actions.description="Wraps the swift CLI to enable common swift commands."
+LABEL com.github.actions.name="GitHub Action for Swift"
+LABEL com.github.actions.description="Wraps the Swift CLI to enable common Swift commands."
 #LABEL com.github.actions.icon="package"
 LABEL com.github.actions.color="orange"
-#COPY LICENSE README.md THIRD_PARTY_NOTICE.md /
 
+COPY LICENSE README.md /
 COPY "entrypoint.sh" "/entrypoint.sh"
+
 ENTRYPOINT ["/entrypoint.sh"]
