@@ -1,4 +1,4 @@
-FROM swift:5.0
+FROM norionomura/swift:swift-5.0-branch
 
 #LABEL version="1.0.0"
 #LABEL repository="http://github.com/actions/npm"
