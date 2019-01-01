@@ -1,4 +1,4 @@
-FROM swift:4.2
+FROM swift:5.0
 
 #LABEL version="1.0.0"
 #LABEL repository="http://github.com/actions/npm"
